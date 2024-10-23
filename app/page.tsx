@@ -121,10 +121,10 @@ export default function Home() {
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-muted-foreground" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919480326693"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +91 98765 43210
+                  +91 94803 26693
                 </a>
               </div>
               <span className="text-sm font-medium">Mr. Raghavendra Hegde</span>
@@ -136,10 +136,10 @@ export default function Home() {
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-muted-foreground" />
                 <a
-                  href="tel:+919876543212"
+                  href="tel:+919900581417"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +91 98765 43212
+                  +91 99005 81417
                 </a>
               </div>
               <span className="text-sm font-medium">
@@ -153,10 +153,10 @@ export default function Home() {
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-muted-foreground" />
                 <a
-                  href="tel:+919876543211"
+                  href="tel:+918073476691"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +91 98765 43211
+                  +91 80734 76691
                 </a>
               </div>
               <span className="text-sm font-medium">Akshaykumar</span>

@@ -1,5 +1,4 @@
-'use client';
-
+"use client"
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -40,6 +39,9 @@ const formSchema = z.object({
   year: z.string({
     required_error: 'Please select your year of study.',
   }),
+  phone: z.string().min(10, {
+    message: 'Phone number must be at least 10 characters.',
+  }),
 });
 
 export default function RegisterPage() {
@@ -54,6 +56,7 @@ export default function RegisterPage() {
       usn: '',
       email: '',
       year: '',
+      phone: '',  // Initialize phone field
     },
   });
 
@@ -146,6 +149,19 @@ export default function RegisterPage() {
                   <FormLabel>College Email</FormLabel>
                   <FormControl>
                     <Input placeholder="johndoe@college.edu" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phone"  // New phone field
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Phone Number</FormLabel>
+                  <FormControl>
+                    <Input placeholder="1234567890" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
